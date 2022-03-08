@@ -1,0 +1,13 @@
+When a customer placed an order:
+- get empty form to fill out an order
+- enter clinic's id
+- enter patient's details, update the patients table
+- enter the test id
+- update the orders table
+- update the orders_tests table
+
+When a lab user login:
+- fill out the order number in order to look up the order details
+- render a single order to edit
+- Accept or reject a test (or the tube???)
+- update the orders_tests table

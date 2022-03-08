@@ -1,0 +1,71 @@
+<%- include('header'); -%>
+<!-- <h1>Order:</h1>
+<table>
+  <tr>
+    <th>Test name</th>
+    <th>Tube Color</th>
+  </tr> -->
+  <!-- <% records.forEach((record,index)=>{ %>
+    <tr>
+      <td><%= record.test_name %></td>
+      <td><%= record.tube_color %></td>
+    </tr>
+  <% }); %>  -->
+  
+<!-- </table>
+
+<form action="/user/order_all" method="GET">
+  <input type="submit" value="Done" />
+</form> -->
+
+<div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <h2 class="text-center text-dark mt-5">LabBuddy</h2>
+        <div class="text-center mb-5 text-dark">Better Labs For Better Lives</div>
+        <div class="card my-5">
+
+          <form class="card-body cardbody-color p-lg-5"> 
+
+            <div class="text-center">
+              <img src="/flask.jpg" class="img-fluid profile-image-pic img-thumbnail rounded-circle my-3"
+                width="200px" alt="labBuddy Logo">  
+            </div>
+
+            <div class="mb-3">
+              <h1>Order:</h1>
+            </div>
+
+            <div class="mb-3">
+              <table>
+                <tr>
+                  <th>Test name</th>
+                  <th>Tube Color</th>
+                </tr>
+                <% records.forEach((record,index)=>{ %>
+                <tr>
+                  <td><%= record.test_name %></td>
+                  <td><%= record.tube_color %></td>
+                </tr>
+                <% }); %>  
+              </table>
+            </div>
+            
+
+            <div class="text-center">
+              <!-- <button type="submit" class="btn btn-color px-5 mb-5 w-100">Login</button> -->
+              <form action="/user/order_all" method="GET">
+                <input class="button1" type="submit" value="Done" />
+              </form>
+              
+            </div>
+           
+            </div>
+          </form> 
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>

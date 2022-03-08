@@ -1,0 +1,10 @@
+Routes for user:
+/login = renders a login page
+/user/order_all = renders a list of orders from a specific user
+/user/order/:order_id = renders a single order based on the order_id
+/user/new_order = renders an empty order form for patient information, user input will be inserted into patients table
+/user/new_order2 = renders a second form for user input to be inserted into orders table
+/user/new_order3 = renders a third form for user input to be inserted into orders_tests table
+
+Routes for lab:
+/lab/order_status = renders a list of order from all customers

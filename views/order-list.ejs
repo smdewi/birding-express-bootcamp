@@ -1,0 +1,48 @@
+<%- include('header'); -%>
+
+<div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <h2 class="text-center text-dark mt-5">LabBuddy</h2>
+        <div class="text-center mb-5 text-dark">Better Labs For Better Lives</div>
+        <div class="card my-5">
+
+          <form class="card-body cardbody-color p-lg-5"> 
+
+            <div class="text-center">
+              <img src="/flask.jpg" class="img-fluid profile-image-pic img-thumbnail rounded-circle my-3"
+                width="200px" alt="labBuddy Logo">  
+            </div>
+
+            <div class="mb-3">
+              <h1>Order:</h1>
+            </div>
+
+            <div class="mb-3">
+              <table>
+                <tr>
+                  <th>Ordered By</th>
+                  <th>Patient Name</th>
+                  <th>Order Date</th>
+                  <th>Order Status</th>
+                </tr>
+                <% records.forEach((record,index)=>{ %>
+                <tr>
+                  <td><%= record.order_placed_by %></td>
+                  <td><%= record.patient_name %></td>
+                  <td><%= record.order_date %></td>
+                  <td><%= record.order_status %></td>
+                </tr>
+                <% }); %> 
+              </table>
+            </div>
+            
+            </div>
+          </form> 
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
