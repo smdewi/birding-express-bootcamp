@@ -121,12 +121,12 @@ INSERT INTO users (customer_id, username, password, first_name, last_name, email
 INSERT INTO users (customer_id, username, password, first_name, last_name, email) VALUES (2,'adam', '574e5555ff92d0acda78b4c8e89350486e7a0d6b943051a51f8a18651884bbf987bbd461e2f5a2e7f640f927dca9daf942cc29d0f9285d94265e711afdddd2d9', 'Adam', 'Smith', 'asmith@mtsinai.com');
 INSERT INTO users (customer_id, username, password, first_name, last_name, email) VALUES (3,'ali','15235cf272b760adab86e7bd543d8da89898166c58ba40dd922cab4151a0919b01f6e51d22e06e3c182c2132115800158877539b2c06af21041caae86be1c354', 'Ali', 'Wibowo', 'ali@ndc.com');
 
-INSERT INTO orders (user_id, patient_id, order_date, order_status) VALUES (1, 1, '1/2/2022', 'ordered');
-INSERT INTO orders (user_id, patient_id, order_date, order_status) VALUES (1, 2, '1/2/2022', 'ordered');
-INSERT INTO orders (user_id, patient_id, order_date, order_status) VALUES (2, 3, '2/2/2022', 'ordered');
-INSERT INTO orders (user_id, patient_id, order_date, order_status) VALUES (2, 4, '2/2/2022', 'ordered');
-INSERT INTO orders (user_id, patient_id, order_date, order_status) VALUES (3, 5, '3/2/2022', 'ordered');
-INSERT INTO orders (user_id, patient_id, order_date, order_status) VALUES (3, 6, '3/2/2022', 'ordered');
+INSERT INTO orders (user_id, patient_id, order_date, order_status) VALUES (1, 1, '1/2/2022', 'Ordered');
+INSERT INTO orders (user_id, patient_id, order_date, order_status) VALUES (1, 2, '1/2/2022', 'Ordered');
+INSERT INTO orders (user_id, patient_id, order_date, order_status) VALUES (2, 3, '2/2/2022', 'Ordered');
+INSERT INTO orders (user_id, patient_id, order_date, order_status) VALUES (2, 4, '2/2/2022', 'Ordered');
+INSERT INTO orders (user_id, patient_id, order_date, order_status) VALUES (3, 5, '3/2/2022', 'Ordered');
+INSERT INTO orders (user_id, patient_id, order_date, order_status) VALUES (3, 6, '3/2/2022', 'Ordered');
 
 INSERT INTO orders_tests (order_id, orderedtest_id) VALUES (1, 1);
 INSERT INTO orders_tests (order_id, orderedtest_id) VALUES (1, 2);

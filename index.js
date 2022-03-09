@@ -167,10 +167,11 @@ app.get('/user/new_order2', (request, response) => {
 
 app.post('/user/new_order2', (request, response) => {
   // eslint-disable-next-line max-len
-  const valuesNewOrder = [request.body.user_id, request.body.patient_id, request.body.order_date];
+  const userID = request.cookies.user_id;
+  const valuesNewOrder = [userID, request.body.patient_id, request.body.order_date];
   console.log(valuesNewOrder);
   console.log(request.cookies.user_id);
-  pool.query('INSERT INTO orders (user_id, patient_id, order_date) VALUES ($1, $2, $3)', valuesNewOrder, (error, result) => {
+  pool.query('INSERT INTO orders (user_id, patient_id, order_date, order_status) VALUES ($1, $2, $3, \'Ordered\')', valuesNewOrder, (error, result) => {
     // return if there is a query error
     if (error) {
       console.log('Error executing query', error.stack);
