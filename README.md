@@ -16,6 +16,8 @@ Here is a demo of the app:
 ## Screenshots
 ![LabBuddy](TestnameTestTube.png)
 
+## Entity Relationship Diagram (ERD)
+![LabBuddy ERD](labBuddy-ERD.png)
 
 ## Technologies
 * JavaScript
